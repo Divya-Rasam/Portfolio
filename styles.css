@@ -1,0 +1,709 @@
+* {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    margin: 0;
+    padding: 0;
+    color: #fff;
+  }
+
+/* home section */
+
+.backgroundimg {
+  position: relative;
+  min-height: 100vh;
+  width: 100%;
+  overflow: hidden;
+}
+
+.backgroundimg::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  background-image: url(images/homepage/codebackground.jpg);
+  background-size: cover;
+  background-position: center;
+  filter: blur(10px); /* Adjust the blur value as needed */
+  z-index: -1;
+}
+
+.header1 {
+  display: flex;
+  align-items: center; /* Center vertically */
+  justify-content: space-between;
+  box-shadow: 0 1px 8px #ddd;
+  z-index: 1;
+  position: fixed;
+  width: 100%;
+
+  /*  position: relative;     Ensure header content stays above the blurred background  */
+}
+
+.left_nav {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.left_nav a {
+  text-decoration: none;
+}
+
+.logoD {
+    color: #fff;
+    font-size: 40px;
+    margin-left: 50px;
+    font-family: papyrus;
+    font-style: italic;
+}
+
+.mid_nav {
+  flex: 1; /* This allows it to grow and take up available space */
+  display: flex;
+  justify-content: center; /* Center horizontally */
+}
+
+.nav {
+  display: flex;
+}
+
+.mid_nav ul {
+  list-style: none;
+  display: flex;
+  justify-content: space-evenly;
+  padding: 30px 40px;
+  font-size: 20px;
+}
+
+.nav_links {
+  text-decoration: none;
+  color: #fff;
+  padding: 0 50px;
+}
+
+.right_nav {
+  align-items: center;
+  justify-content: center;
+  align-content: center;
+}
+
+.nav_icons {
+  text-decoration: none;
+  color: #fff;
+  padding: 0 10px;
+}
+
+.nav_icons i {
+  font-size: 25px; /* Adjust this value to increase or decrease the icon size */
+}
+
+.navicons_little_left {
+  padding-right: 30px;
+}
+
+.spotlight {
+  display: grid;
+  grid-template-columns: auto auto;
+  min-height: 80vh; /* Ensure the spotlight takes the full height of the viewport */
+  
+  
+  margin-left: 100px;
+}
+
+.grid-item {
+    display: flex; 
+    justify-content: center; 
+    align-items: center; 
+    height: 70%; /* Ensure the grid item takes the full height of the grid */
+    margin-top: 200px;
+}
+
+.spotlight_flex {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.divya {
+  font-size: 80px;
+  font-weight: bold;
+  text-align: center;
+}
+
+.web_dev {
+  font-size: 30px;
+  text-align: center;
+  font-weight: bold;
+  margin-bottom: 50px;
+}
+
+.keyboard {
+  font-size: 18px;
+  text-align: center;
+  margin-bottom: 60px;
+}
+
+button {
+  background-color: #4CAF50;
+  border: none;
+  color: white;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 22px;
+  font-weight: bold;
+  margin: 4px 2px;
+  cursor: pointer;
+  border-radius: 8px;
+}
+
+.webdev_svg {
+  width: 800px; /* Adjust this value to your desired width */
+  height: auto; /* Maintain the aspect ratio */
+}
+
+.spotlight_flex1 {
+  margin-left: 80px;
+}
+
+.contact-info {
+  padding: 20px 300px;
+  color: #000; /* Set a contrasting color */
+  position: relative; /* Make sure it's positioned within its parent */
+  z-index: 2; /* Ensure it's above other content */
+  background-color: transparent;
+  margin-top: 20px; /* Add some spacing from the spotlight section */
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+}
+
+.grid-item2 {
+  display: flex; 
+  justify-content: center; 
+  align-items: center; 
+  flex-direction: column;
+}
+
+h3 {
+  font-size: 25px;
+}
+
+.contact_p {
+  font-size: 22px;
+}
+
+/* about section */
+
+.about {
+  background-color: #1E1C1C;
+  height: 60vh;
+  width: 100%;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  align-items: center;
+  justify-items: center;
+  padding-top: 80px;
+}
+
+.my_img {
+  width: 300px;
+  height: 400px;
+  border-radius: 10px;
+}
+
+.about_right {
+  margin-right: 200px;
+}
+
+.about_p {
+  margin-bottom: 30px;
+}
+
+.whoAmI {
+  color: #249911;
+  font-size: 25px;
+  font-style: italic;
+  margin-bottom: 10px;
+}
+
+.projects {
+  background-color: #1E1C1C;
+  height: 100vh;
+  width: 100%;
+  padding-top: 120px;
+}
+
+.works_head {
+  font-size: 60px;
+  text-align: center;
+  color: #249911;
+  font-style: italic;
+  margin-bottom: 10px
+}
+
+.works_categories {
+  display: flex;
+  justify-content: space-evenly;
+  padding: 30px 40px;
+  font-size: 20px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+#gallery {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr); /* 3 columns */
+  gap: 60px; /* Spacing between items */
+  margin-left: 120px;
+  margin-right: 120px;
+  margin-top: 30px;
+}
+
+.mix {
+  background-color: #2E2C2C;
+  padding: 10px;
+  border-radius: 8px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.card {
+  height: 150px;
+  background-color: #ddd;
+  border-radius: 4px;
+  margin-bottom: 10px;
+}
+
+.text .bold {
+  font-weight: bold;
+  margin-bottom: 5px;
+}
+
+.text .highlight {
+  color: #666;
+  font-size: 0.9em;
+}
+
+.button {
+  margin-top: 10px;
+  padding: 8px 12px;
+  background-color: #000;
+  color: white;
+  text-align: center;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.button:hover {
+  background-color: #666;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.services {
+  background-color: #1E1C1C;
+  height: 70vh;
+  width: 100%;
+  padding: 80px 0;
+}
+
+.services_top {
+  position: relative;
+  height: 25vh;
+  padding-left: 300px;
+  padding-top: 20px;
+}
+
+.down_service {
+  font-size: 128px;
+  position: relative;
+  height: 70px;
+  color: #2E2C2C;
+  font-style: italic;
+}
+
+.up_service {
+  font-size: 50px;
+  position: absolute;
+  left: 50px; 
+  padding-left: 300px;
+  color: #249911;
+  font-style: italic;
+}
+
+.services_grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}
+
+.services_left {
+  background-color: #2E2C2C;
+  width: 60%;
+  height: 300px;
+  margin-left: 300px;
+  margin-right: auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: left;
+}
+
+.services_right {
+  background-color: #2E2C2C;
+  width: 60%;
+  height: 300px;
+  margin-left: auto;
+  margin-right: 300px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: left;
+}
+
+.center_align {
+  text-align: left;
+  margin-left: 20px;
+  margin-right: 10px;
+}
+
+.services_gap {
+  margin-bottom: 10px;
+}
+
+.littleleft_svg2 {
+  margin-left: auto;
+}
+
+.contact {
+  background-color: #1E1C1C;
+  height: 80vh;
+  width: 100%;
+}
+
+.contact_info {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.contact_me {
+  font-size: 64px;
+  text-align: center;
+  color: #249911;
+  font-style: italic;
+  margin-bottom: 10px;
+}
+
+.work_together {
+  font-size: 24px;
+  text-align: center;
+  color: #fff;
+  margin-bottom: 100px;
+}
+
+form {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+input {
+  width: 400px;
+  padding: 15px;
+  margin-bottom: 20px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  color: #000;
+}
+
+.message {
+  margin-bottom: 80px;
+  width: 400px;
+  padding: 15px;
+  margin-bottom: 20px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  color: #000;
+}
+
+.submit {
+  background-color: #249911;
+  color: #fff;
+  border-radius: 8px;
+  font-size: 20px;
+  cursor: pointer;
+  margin-bottom: 100px;
+}
+
+
+
+
+
+
+
+
+
+/* Extra small devices (phones, 600px and down) */
+@media only screen and (max-width: 600px) {
+
+  * {
+    font-family: Arial, sans-serif;
+    line-height: 1.3;
+    margin: 0;
+    padding: 0;
+    color: #fff;
+  }
+  
+  .backgroundimg::before {
+    filter: blur(4px); /* Adjust the blur value as needed */ 
+  }
+
+  .header1 {
+    display: flex;
+    align-items: center; /* Center vertically */
+    justify-content: space-between;
+    flex-direction: column;
+  }
+  
+  .logoD {
+      margin-top: 8px;
+      font-weight: bold;
+  }
+  
+
+
+
+
+
+
+
+
+  .mid_nav {
+
+    /*
+    flex: 1; /* This allows it to grow and take up available space */                                   /*      
+    display: flex;
+    justify-content: center; /* Center horizontally */  
+    
+    display: grid;
+    grid-column: auto / auto;
+
+
+
+  }
+  
+  .nav {
+    display: flex;
+  }
+
+
+
+
+
+  
+  
+  .mid_nav ul {
+    padding: 20px 30px;
+    font-size: 20px;
+  }
+  
+  .nav_links {
+    padding: 0 40px;
+  }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  /*
+  
+  .right_nav {
+    align-items: center;
+    justify-content: center;
+    align-content: center;
+  }
+  
+  .nav_icons {
+    text-decoration: none;
+    color: #fff;
+    padding: 0 10px;
+  }
+  
+  .nav_icons i {
+    font-size: 25px; /* Adjust this value to increase or decrease the icon size */                  /*
+  }
+  
+  .navicons_little_left {
+    padding-right: 30px;
+  }
+  
+  .spotlight {
+    display: grid;
+    grid-template-columns: auto auto;
+    min-height: 80vh; /* Ensure the spotlight takes the full height of the viewport */                  /*
+          
+    
+    margin-left: 100px;
+  }
+  
+  .grid-item {
+      display: flex; 
+      justify-content: center; 
+      align-items: center; 
+      height: 70%; /* Ensure the grid item takes the full height of the grid */                    /*
+      margin-top: 200px;
+  }
+  
+  .spotlight_flex {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .divya {
+    font-size: 80px;
+    font-weight: bold;
+    text-align: center;
+  }
+  
+  .web_dev {
+    font-size: 30px;
+    text-align: center;
+    font-weight: bold;
+    margin-bottom: 50px;
+  }
+  
+  .keyboard {
+    font-size: 18px;
+    text-align: center;
+    margin-bottom: 60px;
+  }
+  
+  button {
+    background-color: #4CAF50;
+    border: none;
+    color: white;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 22px;
+    font-weight: bold;
+    margin: 4px 2px;
+    cursor: pointer;
+    border-radius: 8px;
+  }
+  
+  .webdev_svg {
+    width: 800px; /* Adjust this value to your desired width */                       /*
+    height: auto; /* Maintain the aspect ratio */                                      /*
+  }
+  
+  .spotlight_flex1 {
+    margin-left: 80px;
+  }
+  
+  .contact-info {
+    padding: 20px 300px;
+    color: #000; /* Set a contrasting color */                                            /*
+    position: relative; /* Make sure it's positioned within its parent */               /*
+    z-index: 2; /* Ensure it's above other content */                                   /*
+    background-color: transparent;
+    margin-top: 20px; /* Add some spacing from the spotlight section */                /*
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+  }
+  
+  .grid-item2 {
+    display: flex; 
+    justify-content: center; 
+    align-items: center; 
+    flex-direction: column;
+  }
+  
+  h3 {
+    font-size: 25px;
+  }
+  
+  .contact_p {
+    font-size: 22px;
+  }
+
+*/
+
+
+}
